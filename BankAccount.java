@@ -1,8 +1,11 @@
 class BankAccount {
+     // Instance variables to store account information
     private String accountNumber;
     private String accountHolderName;
     private String accountType;
     private double balance;
+      
+    // Constructor to initialize the BankAccount object
 
     public BankAccount(String accountNumber, String accountHolderName, String accountType, double balance) {
         this.accountNumber = accountNumber;
@@ -43,7 +46,7 @@ class BankAccount {
     public void setBalance(double balance) {
         this.balance = balance;
     }
-
+ // Override toString method to provide a string representation of the BankAccount object
     @Override
     public String toString() {
         return "Account Number: " + accountNumber +
